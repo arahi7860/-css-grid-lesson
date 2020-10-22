@@ -55,3 +55,66 @@ Here are some of the terms we will need to understand when working with CSS Grid
 -   **Grid area** - Any rectangular area bounded by four grid lines and made up of one or more grid cells.
 
 <img src="https://imgur.com/41BYy6R.png" width=600/>
+
+## Implementation
+
+Let's take a few minutes to explore this [web app](https://www.inprnt.com/discover/) built with Grid layout.
+
+> This site was built by a former GA student using CSS-Grid layout, Flexbox, and React.
+
+There are a few ways to implement css grid. I'll show you the steps of how I like to do it.
+
+1. To start, you must have a _container_ (or _parent_) element, with at least one _nested_ (or _child_) elements inside.
+
+```html
+<div class="parent">
+    <div class="child-one">1</div>
+    <div class="child-two">2</div>
+    <div class="child-three">3</div>
+</div>
+```
+
+2. On the container, specify that you are using `display: grid` and what your **_template_** will look like - more specifically, your **_rows_** and **_columns_**. Here's an example.
+
+```css
+.parent {
+    display: grid;
+    grid-template-rows: 100px 200px 300px;
+    grid-template-columns: 100px 1fr 2fr 100px;
+}
+```
+
+`fr` represents `fraction`, it's a unit that will evenly span the remainder of the space.
+
+Here we have specified **_3 rows_**, taking up 100, 200, and 300 pixels respectively. We also specified **_4 columns_**, giving us a total of **_12 cells_**. `grid-template` also takes other units like `%`, `rem`, and `auto`. For now we will focus on `px` and `fr` units. You can also use `repeat` to specify multiple rows or columns of one size like this `repeat(5, 1fr)`
+
+3. the _child_ elements, you can specify _where_ the _cells_ are located and the _size_ you want them to be. I like to follow this pattern...
+
+```css
+selector {
+    grid-row: where-to-start / span size;
+}
+```
+
+> same would work for `grid-column`
+
+So something like this on a _child_ element...
+
+```css
+.child {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+}
+```
+
+This element takes up 1 row, starting at row 1, and takes up 2 columns, starting at column 1.
+
+We could also write `grid-row: 1;` for short, if your element only spans 1 row.
+
+### Great Resources:
+
+-   [CSS Tricks - A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+
+-   [Grid Garden](https://cssgridgarden.com/)
+
+-   [Css Grid - Scrimba](https://scrimba.com/learn/R8PTE)
