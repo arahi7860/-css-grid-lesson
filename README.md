@@ -54,7 +54,13 @@ Here are some of the terms we will need to understand when working with CSS Grid
 
 -   **Grid area** - Any rectangular area bounded by four grid lines and made up of one or more grid cells.
 
-<img src="https://imgur.com/41BYy6R.png" width=600/>
+<!-- <img src="https://imgur.com/41BYy6R.png" width=600/> -->
+
+## Grid Properties
+
+Here is a list of all the properties available for both parent and child elements along with descriptons
+
+[Properties](https://css-tricks.com/snippets/css/complete-guide-grid/#grid-table-of-contents)
 
 ## Implementation
 
@@ -62,9 +68,9 @@ Let's take a few minutes to explore this [web app](https://www.inprnt.com/discov
 
 > This site was built by a former GA student using CSS-Grid layout, Flexbox, and React.
 
-There are a few ways to implement css grid. I'll show you the steps of how I like to do it.
+There are a few ways to implement css grid. We will focus on the following:
 
-1. To start, you must have a _container_ (or _parent_) element, with at least one _nested_ (or _child_) elements inside.
+1. To start, you must have a **container** (or **parent**) element, with at least one **nested** (or **child**) elements inside.
 
 ```html
 <div class="parent">
