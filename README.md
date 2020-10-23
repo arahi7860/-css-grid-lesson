@@ -2,6 +2,15 @@
 
 # CSS Grid
 
+## Objectives
+
+By the end of this lesson students will be able to:
+
+-   [] Explain when to use Flexbox vs. Grid
+-   [] Use proper terminology to refer to the different grid pieces
+
+-   [] Create layouts using CSS Grid
+
 ## The Concept Of Grid
 
 Although `CSS Grid` wasn't available until 2017 the concept of `grid` isn't new. [Bootstrap](https://getbootstrap.com/docs/4.1/layout/grid/) was built on arranging content in rows and columns, essentially creating a grid.
