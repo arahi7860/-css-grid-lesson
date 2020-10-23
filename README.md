@@ -49,9 +49,9 @@ Some browsers do require a specific prefix naming convention in order to apply c
 
 Here are some of the terms we will need to understand when working with CSS Grid.
 
--   **Grid container** - An element that defines a grid-formatting context for its contents. (Parent)
+-   **Grid container** - An container element that defines a grid-formatting context for its contents.
 
--   **Grid item** - An element that participates in grid layout within a grid-formatting context. (Children)
+-   **Grid item** - Each child element of a grid container is a grid item
 
 -   **Grid track** - A continuous run between two adjacent grid lines. A grid row or column.
 
