@@ -37,11 +37,11 @@ You can always check out [caniuse.com](http://caniuse.com/) to ensure that you a
 
 <img src="https://i.imgur.com/j1qTzte.png" /> -->
 
-#### Browser Compatibility
+<!-- #### Browser Compatibility
 
 Some browsers do require a specific prefix naming convention in order to apply certain properties so we can use [shouldiprefix](http://shouldiprefix.com/) to determine what those are and implement when and where needed, such as IE.
 
-<img src="https://i.imgur.com/V7eggiG.png">
+<img src="https://i.imgur.com/V7eggiG.png"> -->
 
 ## Working With CSS Grid
 
