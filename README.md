@@ -29,13 +29,13 @@ Both `Flexbox` and `CSS Grid` almost always work together with `CSS Grid` being 
 
 <img src="https://i.imgur.com/zO6XljL.png" width=500/>
 
-### Can I use Grid?
+<!-- ### Can I use Grid?
 
 Yes as CSS Grid is supported on almost all modern browsers.
 
 You can always check out [caniuse.com](http://caniuse.com/) to ensure that you are able to use Grid on a specific browser.
 
-<img src="https://i.imgur.com/j1qTzte.png" />
+<img src="https://i.imgur.com/j1qTzte.png" /> -->
 
 #### Browser Compatibility
 
