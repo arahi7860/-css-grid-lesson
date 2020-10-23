@@ -43,11 +43,7 @@ Some browsers do require a specific prefix naming convention in order to apply c
 
 <img src="https://i.imgur.com/V7eggiG.png"> -->
 
-## Working With CSS Grid
 
-Grid is the most robust layout system in CSS. You utilize Grid by applying CSS rules to both the parent `(Grid Container)` and it's children `(Grid Items)`, much like we did with Flexbox.
-
-During the lecture we will reference [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) as our go to guide so let's spend a few minutes taking a look at the docs before moving on.
 
 ### Basic Terminology
 
@@ -65,11 +61,11 @@ Here are some of the terms we will need to understand when working with CSS Grid
 
 <!-- <img src="https://imgur.com/41BYy6R.png" width=600/> -->
 
-## Grid Properties
+## Working With CSS Grid
 
-Here is a list of all the properties available for both parent and child elements along with descriptons
+Grid is the most robust layout system in CSS. You utilize Grid by applying CSS rules to both the parent `(Grid Container)` and it's children `(Grid Items)`, much like we did with Flexbox.
 
-[Properties](https://css-tricks.com/snippets/css/complete-guide-grid/#grid-table-of-contents)
+During the lecture we will reference [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) as our go to guide so let's spend a few minutes taking a look at the docs before moving on.
 
 ## Implementation: Holy Grail Layout
 
