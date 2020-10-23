@@ -1,0 +1,11 @@
+unit: 1
+
+section: html/css
+
+type: lesson
+
+notes: covers the basics of css grid with additional resources for student guided learning
+
+orderingID: 100
+
+level: 1
