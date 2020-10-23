@@ -62,7 +62,7 @@ Here is a list of all the properties available for both parent and child element
 
 [Properties](https://css-tricks.com/snippets/css/complete-guide-grid/#grid-table-of-contents)
 
-## Implementation
+## Implementation: Holy Grail Layout
 
 Let's take a few minutes to explore this [web app](https://www.inprnt.com/discover/) built with Grid layout.
 
@@ -74,9 +74,11 @@ There are a few ways to implement css grid. We will focus on the following:
 
 ```html
 <div class="parent">
-    <div class="child-one">1</div>
-    <div class="child-two">2</div>
-    <div class="child-three">3</div>
+    <div class="child" id="one">1</div>
+    <div class="child" id="two">2</div>
+    <div class="child" id="three">3</div>
+    <div class="child" id="four">4</div>
+    <div class="child" id="five">5</div>
 </div>
 ```
 
@@ -85,14 +87,14 @@ There are a few ways to implement css grid. We will focus on the following:
 ```css
 .parent {
     display: grid;
-    grid-template-rows: 100px 200px 300px;
-    grid-template-columns: 100px 1fr 2fr 100px;
+    grid-template-rows: 100px 600px 100px;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 ```
 
 `fr` represents `fraction`, it's a unit that will evenly span the remainder of the space.
 
-Here we have specified **_3 rows_**, taking up 100, 200, and 300 pixels respectively. We also specified **_4 columns_**, giving us a total of **_12 cells_**. `grid-template` also takes other units like `%`, `rem`, and `auto`. For now we will focus on `px` and `fr` units. You can also use `repeat` to specify multiple rows or columns of one size like this `repeat(5, 1fr)`
+Here we have specified **_3 rows_**, taking up 100, 600, and 100 pixels respectively. We also specified **_3 columns_**, giving us a total of **_9 cells_**. `grid-template` also takes other units like `%`, `rem`, and `auto`. For now we will focus on `px` and `fr` units. You can also use `repeat` to specify multiple rows or columns of one size like this `repeat(5, 1fr)`
 
 3. the _child_ elements, you can specify _where_ the _cells_ are located and the _size_ you want them to be. I like to follow this pattern...
 
@@ -104,16 +106,16 @@ selector {
 
 > same would work for `grid-column`
 
-So something like this on a _child_ element...
+So something like this on a _child_ element for example the header...
 
 ```css
-.child {
+#one {
     grid-row: 1 / span 1;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
 }
 ```
 
-This element takes up 1 row, starting at row 1, and takes up 2 columns, starting at column 1.
+This element takes up 1 row, starting at row 1, and takes up 3 columns, starting at column 1.
 
 We could also write `grid-row: 1;` for short, if your element only spans 1 row.
 
