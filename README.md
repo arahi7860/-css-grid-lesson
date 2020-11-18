@@ -37,25 +37,21 @@ You can always check out [caniuse.com](http://caniuse.com/) to ensure that you a
 
 <img src="https://i.imgur.com/j1qTzte.png" /> -->
 
-#### Browser Compatibility
+<!-- #### Browser Compatibility
 
 Some browsers do require a specific prefix naming convention in order to apply certain properties so we can use [shouldiprefix](http://shouldiprefix.com/) to determine what those are and implement when and where needed, such as IE.
 
-<img src="https://i.imgur.com/V7eggiG.png">
+<img src="https://i.imgur.com/V7eggiG.png"> -->
 
-## Working With CSS Grid
 
-Grid is the most robust layout system in CSS. You utilize Grid by applying CSS rules to both the parent `(Grid Container)` and it's children `(Grid Items)`, much like we did with Flexbox.
-
-During the lecture we will reference [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) as our go to guide so let's spend a few minutes taking a look at the docs before moving on.
 
 ### Basic Terminology
 
 Here are some of the terms we will need to understand when working with CSS Grid.
 
--   **Grid container** - An element that defines a grid-formatting context for its contents. (Parent)
+-   **Grid container** - An container element that defines a grid-formatting context for its contents.
 
--   **Grid item** - An element that participates in grid layout within a grid-formatting context. (Children)
+-   **Grid item** - Each child element of a grid container is a grid item
 
 -   **Grid track** - A continuous run between two adjacent grid lines. A grid row or column.
 
@@ -65,11 +61,11 @@ Here are some of the terms we will need to understand when working with CSS Grid
 
 <img src="./grid-diagram.png" width=600/>
 
-## Grid Properties
+## Working With CSS Grid
 
-Here is a list of all the properties available for both parent and child elements along with descriptons
+Grid is the most robust layout system in CSS. You utilize Grid by applying CSS rules to both the parent `(Grid Container)` and it's children `(Grid Items)`, much like we did with Flexbox.
 
-[Properties](https://css-tricks.com/snippets/css/complete-guide-grid/#grid-table-of-contents)
+During the lecture we will reference [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) as our go to guide so let's spend a few minutes taking a look at the docs before moving on.
 
 ## Implementation: Holy Grail Layout
 
