@@ -6,10 +6,10 @@
 
 By the end of this lesson students will be able to:
 
-- [ ] Explain when to use Flexbox vs. Grid
-- [ ] Use proper terminology to refer to the different grid pieces
+-   [ ] Explain when to use Flexbox vs. Grid
+-   [ ] Use proper terminology to refer to the different grid pieces
 
-- [ ] Create layouts using CSS Grid
+-   [ ] Create layouts using CSS Grid
 
 ## The Concept Of Grid
 
@@ -63,7 +63,7 @@ Here are some of the terms we will need to understand when working with CSS Grid
 
 -   **Grid area** - Any rectangular area bounded by four grid lines and made up of one or more grid cells.
 
-<!-- <img src="https://imgur.com/41BYy6R.png" width=600/> -->
+<img src="./grid-diagram.png" width=600/>
 
 ## Grid Properties
 
@@ -127,6 +127,64 @@ So something like this on a _child_ element for example the header...
 This element takes up 1 row, starting at row 1, and takes up 3 columns, starting at column 1.
 
 We could also write `grid-row: 1;` for short, if your element only spans 1 row.
+
+## Grid Template Areas
+
+Numbers not your thing? More of a visual thinker? Then you will love grid template areas. Lets go through the Holy Grail Layout again this time using grid areas to set up our grid.
+
+1. We can use the same HTML as before because we have our parent and children all set up!
+
+```html
+<div class="parent">
+    <div class="child" id="one">1</div>
+    <div class="child" id="two">2</div>
+    <div class="child" id="three">3</div>
+    <div class="child" id="four">4</div>
+    <div class="child" id="five">5</div>
+</div>
+```
+
+2. On the container, we again specify that you are using `display: grid` and what your **_template_** will look like. However, this time we will use a more visual approach with `grid-template-area` Grid template area can take 3 possible values:
+
+    1. `grid-area-name` – the name of a grid area specified with grid-area
+    1. `.` – a period which signifies an empty grid cell
+    1. `none` – meaning no grid areas are defined
+
+```css
+.parent {
+    display: grid;
+    grid-template-areas:
+        "H H H H"
+        "L A A R"
+        "F F F F";
+}
+```
+
+3. Now our page knows we want 4 columns but how do we get the areas where we want them? One each child we specify which grid area we want them to belong to and grid will take care of the rest
+
+```css
+#one {
+    grid-area: H;
+}
+
+#two {
+    grid-area: L;
+}
+
+#three {
+    grid-area: A;
+}
+
+#four {
+    grid-area: R;
+}
+
+#five {
+    grid-area: F;
+}
+```
+
+We can still use `grid-template-rows` and `grid template column` to set specific heights and widths for our rows and columns
 
 ### Great Resources:
 
