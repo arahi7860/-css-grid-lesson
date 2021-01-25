@@ -1,0 +1,27 @@
+div {
+  font-family: sans-serif;
+  text-align: center;
+  min-height: 25px;
+  min-width: 25px;
+}
+
+#one {
+  background-color: #5EB1BF;
+}
+
+#two {
+  background-color: #E28413;
+}
+
+#three {
+  background-color: #000022;
+  color: white;
+}
+
+#four {
+  background-color: #DE3C4B;
+}
+
+#five {
+  background-color: #C42847;
+}
